@@ -1,2 +1,6 @@
 # Special
 Heart.txt
+identifier.py
+
+# Cache
+_pycache_/*
