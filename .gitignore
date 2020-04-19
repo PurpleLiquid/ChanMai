@@ -3,4 +3,4 @@ Heart.txt
 identifier.py
 
 # Cache
-_pycache_/*
+__pycache__/*.py[cod]
