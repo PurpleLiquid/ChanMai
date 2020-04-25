@@ -4,3 +4,8 @@ identifier.py
 
 # Cache
 __pycache__/*.py[cod]
+
+# Automatically Generated
+words.pkl
+classes.pkl
+chatbot_model.h5
