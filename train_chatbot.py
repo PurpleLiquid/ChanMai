@@ -10,8 +10,6 @@ import random
 import string
 
 lemmatizer = WordNetLemmatizer()
-nltk.download('punkt')
-nltk.download('wordnet')
 
 words = []
 classes = []
@@ -52,12 +50,12 @@ for doc in documents:
     pattern_words = doc[0]
     pattern_words = [lemmatizer.lemmatize(word.lower()) for word in pattern_words]
     
-for w in words:
-    bag.append(1) if w in pattern_words else bag.append(0)
-    
+    for w in words:
+        bag.append(1) if w in pattern_words else bag.append(0)
+
     output_row = list(output_empty)
     output_row[classes.index(doc[1])] = 1
-    
+
     training.append([bag, output_row])
     
 random.shuffle(training)

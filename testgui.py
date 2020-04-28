@@ -21,7 +21,7 @@ def send():
         ChatLog.yview(END)
 
 base = Tk()
-base.title("Hello")
+base.title("Chat With Me")
 base.geometry("400x500")
 base.resizable(width=FALSE, height=FALSE)
 
